@@ -41,6 +41,7 @@
               <span>模块管理</span>
             </template>
             <el-menu-item-group>
+              <el-menu-item index="/test"><el-icon><Memo /></el-icon>测试管理</el-menu-item>
               <el-menu-item index="/category"><el-icon><Menu /></el-icon>分类管理</el-menu-item>
               <el-menu-item index="/good"><el-icon><Goods /></el-icon>商品管理</el-menu-item>
               <el-menu-item index="/guest"><el-icon><User /></el-icon>会员管理</el-menu-item>

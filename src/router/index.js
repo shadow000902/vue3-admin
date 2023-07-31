@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHashHistory(), // hash模式：createWebHashHistory，history模式：createWebHistory
-  routes: [
+  routes: [ // 配置路由，这里是个数组，每一项都是一个路由的配置，可以有多个配置；routes 属性和 vue-router 3 的配置一样，通过数组对象的形式，配置路径对应展示的组件。
     {
       path: '/',
       redirect: '/introduce'
@@ -16,6 +16,11 @@ const router = createRouter({
       path: '/dashboard',
       name: 'dashboard',
       component: () => import(/* webpackChunkName: "dashboard" */ '../views/Index.vue')
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import(/* webpackChunkName: "test" */ '../views/Test.vue')
     },
     {
       path: '/login',

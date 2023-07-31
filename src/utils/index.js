@@ -30,6 +30,7 @@ export const pathMap = {
   login: '登录',
   introduce: '系统介绍',
   dashboard: '大盘数据',
+  test: '测试管理',
   add: '添加商品',
   swiper: '轮播图配置',
   hot: '热销商品配置',
